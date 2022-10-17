@@ -1,0 +1,17 @@
+form{
+    font-weight:bold;
+    
+}
+#table1{
+    width:600px;
+    height:600px;
+    background-color: rgb(107, 243, 77);
+    border:5px solid rgb(8, 116, 28);
+}
+#table2{
+    width:100%;
+    background-color: rgb(251, 66, 177);
+    border:5px solid rgb(163, 39, 105);
+}
+
+
