@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { nanoid } from "nanoid";
 import data from "./mock-data.json";
-import "./Table.css";
+import "./Validation.css";
 import ReadData from "./ReadData";
 import Edit from "./Edit";
 
@@ -45,6 +45,7 @@ const Validation = () => {
 
   const handleAddFormSubmit = (event) => {
     event.preventDefault();
+  
     const newInput = {
       id: nanoid(),
       firstName: addFormData.firstName,
@@ -63,6 +64,7 @@ const Validation = () => {
     const newInputs = [...inputs, newInput];
     setInputs(newInputs);
     };
+  
 
   const handleEditFormSubmit = (event) => {
     event.preventDefault();
@@ -90,8 +92,8 @@ const Validation = () => {
 
     setInputs(newInputs);
     setEditId(null);
-  };
 
+  };
   const handleEditClick = (event, input) => {
     event.preventDefault();
     setEditId(input.id);
@@ -120,7 +122,7 @@ const Validation = () => {
   return (
     <div className="app-container">
     <h1 align="center">Form</h1>
-     <form onSubmit={handleAddFormSubmit}>
+     <form onSubmit={handleAddFormSubmit} autoComplete='off'>
      <table className="table1" align="center">
      <tr>
         <td>FirstName:</td>
@@ -167,7 +169,7 @@ const Validation = () => {
         <td><input type="search" name="search" required="required" onChange={handleAddFormChange}/></td>         
     </tr><br></br>
 
-        <button type="submit">Submit</button>
+        <button type="submit" >Submit</button>
         <button type="reset">Reset</button>
 
         </table>

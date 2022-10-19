@@ -1,46 +1,36 @@
-// import React from 'react'
-// import Validation from "./Validation";
-// 
-// const App = () => {
-//   return (
-	// <div><Validation /></div>
-//   )
-// }
-// 
-// export default App
-// 
+import React from 'react'
+import Validation from "./Validation";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-import Form from './Form';
-// 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <Form/>
-    </div>
-  );
+	<div>
+  <Validation />
+  </div>
+  )
 }
-// 
-// 
-export default App;
+
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
